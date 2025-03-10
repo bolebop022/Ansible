@@ -1,0 +1,7 @@
+- name: My first play
+  hosts: myhosts
+  become: True
+  tasks:
+   - name: Ping my hosts
+     ansible.builtin.debug:
+       msg: Hello world
